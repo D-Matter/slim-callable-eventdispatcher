@@ -1,0 +1,10 @@
+services:
+  cli:
+    image: dmatterhub/testing:8.1.0
+    volumes:
+      - ./:/app
+      - composer_data:/tmp
+    command: composer test
+
+volumes:
+  composer_data: {}

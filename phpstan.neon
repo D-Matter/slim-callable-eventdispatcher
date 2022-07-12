@@ -1,0 +1,15 @@
+parameters:
+    level: 8
+
+    checkGenericClassInNonGenericObjectType: false
+    checkMissingIterableValueType: false
+
+    paths:
+        - src
+
+    universalObjectCratesClasses:
+        - App\Session\NamespaceInterface
+        - App\View
+
+    parallel:
+        maximumNumberOfProcesses: 1
